@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: `add the URL to your deployed website`
+Deployed website: `https://catmayo.github.io/cat-PUI-Hw/`
 
-Repository link: `add the URL to this repository`
+Repository link: `https://github.com/catmayo/cat-PUI-Hw`
