@@ -125,7 +125,6 @@ nav ul li a:hover {
     border: none;
     border-top: 4px solid black;
     width: 100%;
-    margin: 10px 0;
 }
 nav ul {
     list-style-type: none;
