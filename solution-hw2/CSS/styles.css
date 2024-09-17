@@ -13,16 +13,18 @@ body {
 }
 nav {
     display: flex; 
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    padding: 30px;
+    border-bottom: 5px solid black;
+    flex-grow: 1;
+    width: 100%;
 }
 nav ul {
     display: flex;
-    padding-left: 1450px;
-    border-bottom: 5px solid black;
-    padding-bottom: 20px;
-    padding-right: 80px;
+    gap: 20px; 
     list-style-type: none;
+    justify-content: flex-end;
 }
 nav ul li a {
     text-decoration: none;
@@ -142,23 +144,32 @@ header{
     float: left;
     margin: 30px 0 0 20px;
 }
+.cart-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 900px;
+    margin: 0 auto;
+}
 .cart-title h1 {
     margin-top: 50px;
-    text-align: center;
-    padding-left: 20px;
+    text-align: left;
+    font-weight: normal;
+    margin: 0 0 20px 60px;
 }
 .cart-item {
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     max-width: 800px;
-    margin: 20px auto; 
-    padding: 20px;
-
+    margin: 10px auto; 
+    padding: 10px;
 }
-.item-image {
+.item-image{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
     margin-bottom: 20px;
 }
 .cart-item-image {
@@ -169,7 +180,7 @@ header{
 }
 .remove-item {
     text-align: left;
-    margin-top: 30px;
+    margin-top: 20px;
     cursor: pointer;
     font-weight: bold;
     text-decoration: underline;
@@ -177,7 +188,9 @@ header{
 .item-details {
     flex-grow: 1;
     text-align: left;
-    margin-right: 20px;
+    margin-right: -20px;
+    margin-top: 0px;
+    line-height: 2.5;
 }
 .item-details p {
     margin: 5px 0;
@@ -189,18 +202,23 @@ header{
     margin: 30px auto;
 }
 .total-price {
+    text-align: left;
+    font-weight: bold;
+    margin-left: calc(285px + 750px);
+}
+.total-amount {
     text-align: right;
     font-weight: bold;
-    margin-top: 20px;
+    margin-left: calc(285px + 125px);
 }
 .checkout-button {
     background-color: yellow;
-    border: 3px solid black;
+    border: 2px solid black;
     padding: 20px;
     cursor: pointer;
     margin-top: 20px;
     display: block;
-    width: 200px;
-    margin-left: auto;
-    margin-right: 0;
+    width: 150px;
+    text-align: center;
+    margin-left: calc(285px + 1110px);
 }
