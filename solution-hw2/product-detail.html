@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8">
-  <title>Product Details</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header>
       <a href="index.html">
-      <img src="../assets/logo/logo-01.svg" alt="Bun Bun Bake Shop Logo" class="logo">
+        <img src="../assets/logo/logo-01.svg" alt="Bun Bun Bake Shop Logo" class="logo">
       </a>
       <hr class="thick-line">
       <nav>
@@ -18,46 +18,50 @@
         </ul>
       </nav>
     </header>
-    <!--THIS IS MY PRODUCT GALLERY PAGE-->
-    <!--Product Title-->
-    <section class="product-title">
-      <h1>Origial Cinnamon Roll</h1>
-    </section>
-    <!--Product Image-->
-    <section class="product-image">
-      <img src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll" class="original-cinnamon-roll-image">
-    </section>
-    <!--Subtext-->
-    <section class="subtext">
-      <p>Customize our delicious,<br>
-      hand-made cinnamon roll to<br>
-      your liking!</p>
-    </section>
-    <!--Dropdown Menu-->
-    <section class="customize-options">
-      <div>
-      <label for="glazing">Glazing:</label>
-      <select name="glazing" id="glazing">
-        <option value="original">Keep Original</option>
-        <option value="sugar-milk">Sugar milk</option>
-        <option value="vanilla-milk">Vanilla milk</option>
-        <option value="double-chocolate">Double chocolate</option>
-      </select>
+    
+    <!--PRODUCT DETAILS CONTAINER-->
+    <div class="product-details-container">
+      <!-- Product Image and Title Container-->
+      <div class="product-image-container">
+        <h1 class="product-title">Original Cinnamon Roll</h1>
+        <img src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll" class="original-cinnamon-roll-image">
+      </div>
+
+      <!--Customization and Options Section-->
+      <div class="customization-section">
+        <!-- Subtext -->
+        <section class="subtext">
+          <p>Customize our delicious,<br> hand-made cinnamon roll to your liking!</p>
+        </section>
+
+        <!--Dropdown Menu-->
+        <section class="customize-options">
+          <div>
+            <label for="glazing">Glazing:</label>
+            <select name="glazing" id="glazing">
+              <option value="original">Keep Original</option>
+              <option value="sugar-milk">Sugar milk</option>
+              <option value="vanilla-milk">Vanilla milk</option>
+              <option value="double-chocolate">Double chocolate</option>
+            </select>
+          </div>
+          <div>
+            <label for="pack-size">Pack Size:</label>
+            <select name="pack-size" id="pack-size">
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+
+          <!--Price and Add to Cart at the bottom-->
+          <div class="price-add-cart">
+            <p class="price">$2.49</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </section>
+      </div>
     </div>
-    <div>
-      <label for="pack-size">Pack Size:</label>
-      <select name="pack-size" id="pack-size">
-        <option value="1">1</option>
-        <option value="3">3</option>
-        <option value="6">6</option>
-        <option value="12">12</option>
-      </select>
-    </div>
-    <!--Price and Add to Cart at the bottom-->
-    <div class="price-add-cart">
-      <p class="price">$2.49</p>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-    </section>
   </body>
 </html>
