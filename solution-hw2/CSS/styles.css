@@ -13,16 +13,16 @@ body {
 }
 nav {
     display: flex; 
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    margin-top: -150px;
 }
 nav ul {
+    display: flex;
+    padding-left: 1450px;
+    border-bottom: 5px solid black;
+    padding-bottom: 20px;
+    padding-right: 80px;
     list-style-type: none;
-    display: flex; 
-    gap: 20px; 
-    padding: 0;
-    margin: 0; 
 }
 nav ul li a {
     text-decoration: none;
@@ -38,22 +38,11 @@ nav ul li a.active {
 nav ul li a:hover {
     text-decoration: none;
 }
-.thick-line {
-    border: none;
-    border-top: 4px solid black;
-    width: 80vw; 
-    position: relative;
-    margin-left: auto;
-    margin-right: 0;
-    top: -90px;
-    clear: both; /* make sure the line doesnt interfere with the logo*/
-}
 .intro h1 {
     font-weight: normal;
     color: black;
-    margin: 40px 0;
-    padding: 80px;
     text-align: center;
+    margin: 40px 0; /* i am not sure how to make the spacing of the intro between the black line and the gallery the same distance. i dont know how to adjust the margin below the line and its driving me mad*/
 }
 .product-gallery {
     display: flex;
@@ -90,6 +79,11 @@ nav ul li a:hover {
     font-weight: bold; 
 }
 /* PRODUCT DETAILS PAGE*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .product-title h1 {
     color: black;
     text-align: center;
@@ -125,8 +119,7 @@ nav ul li a:hover {
 }
 .price{
     text-align: right;
-    font-weight: bold;
-    flex-shrink: 0;
+    white-space: nowrap;
 }
 .price-add-cart {
     display:flex;
@@ -156,27 +149,35 @@ nav ul li a:hover {
 }
 .cart-item {
     display: flex;
-    flex-direction: column; 
-    align-items: center;
-    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto; 
+    padding: 20px;
+
 }
 .item-image {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .cart-item-image {
     width: 285px;
     height: 285px;
     border: 3px solid black;
+    margin-right: 20px;
 }
 .remove-item {
-    color: black;
-    margin-top: 5px;
+    text-align: left;
+    margin-top: 30px;
     cursor: pointer;
     font-weight: bold;
     text-decoration: underline;
 }
 .item-details {
-    text-align: center;
+    flex-grow: 1;
+    text-align: left;
+    margin-right: 20px;
 }
 .item-details p {
     margin: 5px 0;
