@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Product Details</title>
-    <link rel="stylesheet" href="css/styles.css"/>
-    <script src="js/rollsData.js" defer></script> 
-    <script src="js/script.js" defer></script> 
-  </head>
-  <body>
-    <header>
-      <a href="index.html">
-        <img src="../assets/logo/logo-01.svg" alt="Bun Bun Bake Shop Logo" class="logo">
-      </a>
-      <hr class="thick-line">
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">PRODUCTS</a></li>
-          <li><a href="shopping-cart.html">CART</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="product-details-container">
-      <div class="product-image-container">
-        <h1 class="product-title">Original Cinnamon Roll</h1>
-        <img src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll" class="original-cinnamon-roll-image">
-      </div>
 
-      <div class="customization-section">
-        <section class="subtext">
-          <p>Customize our delicious,<br> hand-made cinnamon roll to your liking!</p>
-        </section>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bakery Shop</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/rollsData.js"></script>
+  </head>
+  
 
-        <section class="customize-options">
-          <div>
-            <label for="glazing">Glazing:</label>
-            <select name="glazing" id="glazing">
-            </select>
-          </div>
-          <div>
-            <label for="pack-size">Pack Size:</label>
-            <select name="pack-size" id="pack-size">
-            </select>
-          </div>
+  <body>
+    <nav>
+      <div class="logo-container">
+        <a href="index.html"><img class="logo" src="https://claricedu.github.io/pui-homework-claricedu/assets/logo/logo-01.svg" alt="Logo"></a>
+      </div>
+      
+      <div class="nav-items">
+        <div class="nav-item"><p><a class="selected-nav-item" href="index.html">PRODUCTS</a></p></div>
+      <div class="nav-item"><p><a href="shopping-cart.html">CART</a></p></div>
+      </div>
+    </nav>
 
-          <div class="price-add-cart">
-            <p class="price">$2.49</p> 
-            <button class="add-to-cart">Add to Cart</button>
-          </div>
-        </section>
-      </div>
-    </div>
-  </body>
+    <main>  
+      <h3 id="detail-header-text">Original cinnamon roll</h3>
+    
+      <div class="detail-container">
+        <div>
+          <img id="detail-img" src="https://claricedu.github.io/pui-homework-claricedu/assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+        </div>
+        
+        <div class="detail-des-container">
+          <div><p class="detail-text">Customize our delicious, <br> hand-made cinnamon rolls to <br> your liking!</p></div>
+          
+          <div class="detail-selection">
+            <p>Glazing:</p>
+            <select id="glazingSelect" onchange="glazingChange(this)">
+              <!-- options populated dynamically -->
+            </select>
+          </div>
+    
+          <div class="detail-selection">
+            <p>Pack size:</p>
+            <select id="packSelect" onchange="sizeChange(this)">
+              <!-- options populated dynamically -->
+            </select>
+          </div>
+          
+          <div class="detail-add-cart">
+            <p id="detail-price" class="price">$2.49</p>
+            <button id="detail-add-cart-button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+  </body>
 </html>
