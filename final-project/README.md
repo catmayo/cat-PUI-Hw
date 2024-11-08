@@ -130,26 +130,25 @@ Briefly restate your motivation and a short description of your project.
 ## High-Fi Prototypes
 
 ### *Prototype 1*
+![Prototype 1 Personal Site](<Screenshot 2024-11-07 at 7.11.28 PM.png>)
+![Prototype 1 Personal Site](<Screenshot 2024-11-07 at 7.11.16 PM.png>)
+This is the home page and the work page of my personal site, the feedback I got from peers was mostly about my color contrast. The colors I used were too pale and the contrast was too light, making it hard for users to diffrentiate between what was in the foreground versus the background. The lack in contrast also made my work section confusing, and without any visual feedback upon hovering or clicking, it made it difficult for users to navigate the webpage upon testing. 
 
-![title for prototype1](images/prototype1.png)
 
-A brief description and summary of the user feedback (\<100 words, 2 images) 
-
-### *Prototype 2*
-
+### *Prototype 2 UPDATED DESIGNS* 
+![Personal Site prototype 2](<Screenshot 2024-11-07 at 7.08.54 PM.png>)
 …
-
+![Personal Site Prototype 2](<Screenshot 2024-11-07 at 7.09.10 PM.png>)
 ## Usability Test
-
-Discuss the user feedback you got during the evaluation / usability test (\~300 words). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design. 
+I changed my color scheme (inverted it) so that There would be a heavier contrast between my text and the background. I also accounted for my work section, which initially looked very confusing because it was hard to see which parts were clickable. It was also difficult to read my text. I had focused too much on microinteractions when making my first prototype that I had neglected big picture accessibility, thus confusing users and making it hard for them to scan through my webpage. To make my webpage more visible, I opted to change the worksection back to white upon scroll, so the intro/landing page would be dark purple and when users scroll down to view my work, the background would turn white. I hadn't implemented this transition, rather, i created a different prototype of a white background versus a dark purple one and had users run through each prototype and tell me which one they prefered. They all liked the white background better. I was also advised to add a custom cursor, and some little icons that can be played with but doesnt distract from the overall site. 
 
 ## Updated Designs
-
-Show screenshots of your updated design based on the user feedback (\<100 words, \~2 images).
+(I put the updated designs under prototype 2). 
+When running through my second design, users had a much easier time scanning through my work section when I had changed the background to white. I used think-aloud to conduct these tests, sharing my prototype with my users and asking them to perform three tasks while thinking aloud to me. Task 1 was to navigate to my about section from my home page. Task 2 was to navigate to my projects section, and task 3 was to navigate back to home. I did this with my original dark purple background for all pages, and another one with white background in my pages that were not the home page. Users reported that they had a much easier time navigating through the site with the white background, saying how it was easier to read large amounts of information when the background was not dark and distracting. 
 
 ## Feedback Summary
 
-Summarize the feedback you received in the lab session and discuss how it influenced your design (\~300 words). 
+In lab, when I presented my design, I had fixated a lot on my cursor, and I asked them mostly what they think about my custom cursor. The feedback i got was to stop focusing on my cursor, and instead focus on the readability and accessibility of the rest of my site. The cursor I initially had used was monochromatic, and was very faint against my white background in my first prototype. My peers told me that the cursor was actually more distracting than it was helping, and instead told me to finalize my design before working on my cursor so that I could have a better grasp of what the cursor should look like in order to match the rest of the site and not make it hard to see/access. 
 
 ## Milestones
 
@@ -165,9 +164,11 @@ Outline weekly milestones to plan your expected implementation progress until th
   - [ ] FP2 due
 
 - [ ] Week 11 Nov 11 \- Nov 15:  
+  - [ ] hard code all pages 
 - [ ] Week 12 Nov 18 \- Nov 22:   
+  - [ ] work on interactions/accessibility
 - [ ] Week 13 Nov 25 \- Nov 29:  
-
+  - [ ] Work on interactions 
   - [ ] Thanksgiving  
 - [ ] Week 14 Dec 2 \- Dec 6:  
   - [ ] FP4 due 
@@ -175,12 +176,12 @@ Outline weekly milestones to plan your expected implementation progress until th
 ### *Libraries and Other Components*
 
 List the JS libraries and other components (if applicable) that you plan to use. 
-* 
+* None yet, but definitely will list as I go! 
 
 
 ## Generative AI Use Plan
 
-Outline how you plan to use Generative AI tools to aid in the implementation (\~300 words).
+I currently have no plans on using Gen AI but I will definitely list my usages once I get started with implementation. 
 
 ### *Tool Use*
 
